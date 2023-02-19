@@ -1,0 +1,59 @@
+.header__logo {
+  width: 100%;
+  object-fit: contain;
+  margin: 0 25px;
+  height: 45px;
+}
+@media (max-width: 700px) {
+  .header__logo {
+    display: inline-block;
+  }
+}
+/* form */
+
+.nutton {
+  background-color: #000000 !important;
+  border: 1px solid #efe5bc !important;
+}
+
+.searchIcon {
+  color: #efe5bc !important;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+  color: #ffc107;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_localMallIcon,
+.header_personRoundedIcon,
+.header_favIcon {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header_favIcon {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+  margin-top: 2px;
+  color: white;
+}
