@@ -4,7 +4,6 @@ import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {
 
-
     return (
 
         <div className="product">
@@ -18,7 +17,8 @@ function Product({ id, title, image, price, rating }) {
 
             </div>
 
-            <img style={{ maxheight: "200px" }} src={image} alt="" />
+            <img src={image} alt="" />
+            <button>Add to basket</button>
 
 
         </div>

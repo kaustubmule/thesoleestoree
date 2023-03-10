@@ -7,7 +7,10 @@
 .home__image {
   width: 100%;
   z-index: -2;
-  margin-bottom: -100px;
+  object-fit: cover;
+  object-position: top;
+  max-height: 380px;
+  margin-bottom: -200px;
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
 .home__row {
@@ -77,9 +80,12 @@ input:checked + .slider:before {
   z-index: 2;
   color: #fff;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 10px;
-  padding-right: 15px;
-  background-color: #dfc8a540;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  background-color: #00000089;
 }

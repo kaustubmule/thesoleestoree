@@ -6,12 +6,15 @@ import { useState } from "react"
 import Product from "./Product";
 
 function Home() {
+  const [showBImage, setShowBImage] = useState(true);
+
   const [myStyle, setMyStyle] = useState({
     color: 'white',
     backgroundColor: 'black',
   })
 
   const toggleStyle = () => {
+    setShowBImage(!showBImage);
     if (myStyle.color === "black") {
       setMyStyle({
         color: 'white',
@@ -21,10 +24,11 @@ function Home() {
     else {
       setMyStyle({
         color: 'black',
-        backgroundColor: 'white',
+        backgroundColor: '#FFFEF2',
       })
     }
   }
+
   return (
     <div className="home" style={myStyle}>
       <div className="home__container">
@@ -35,11 +39,15 @@ function Home() {
           </label>
         </div>
 
-        <img
+        {showBImage ? <img
           className="home__image "
           src="https://i.ibb.co/MsX4TrQ/Untitled-design.png"
           alt=""
-        />
+        /> : <img className="home__image " src="https://i.ibb.co/Cv0DGnx/thesolestorewhite.png" alt="Image" />}
+
+
+
+
         <div className="brands" style={{ marginTop: '350px' }}>
           <div className="brand">
             <span class="parallax-text" text="NIKE">
@@ -76,82 +84,75 @@ function Home() {
         <div className="home__row">
           <Product
             id="12321341"
-            title="Air jordan 1 Smoke Grey"
+            title="AJ1 Mid Light Smoke Grey"
             price={25000}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="https://www.kindpng.com/picc/m/576-5762379_air-jordan-1-mid-light-smoke-grey-554724.png"
           />
           <Product
             id="49538094"
-            title="Shoe"
-            price={239.0}
+            title="AJ1 Mid SE Craft"
+            price={12295}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="https://cdn.shopify.com/s/files/1/0670/7323/products/DM9652-102-PHSRH000-2000_2000x.png?v=1676946956"
           />
           <Product
             id="23445930"
-            title="Shoe"
-            price={98.99}
+            title="AJ1 Retro High OG"
+            price={16995}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://cdn.shopify.com/s/files/1/0603/3031/1875/products/1_f1760765-8b5a-43e1-b6fc-8618b6e52e7c_540x.jpg?v=1672758518"
           />
         </div>
 
-        {/* <div className="home__row">
+        <div className="home__row">
           <Product
             id="4903850"
-            title="Shoe"
-            price={199.99}
+            title="Adi2000 Shoes"
+            price={10999}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            image="https://images.footlocker.com/is/image/FLEU/316703328704?wid=620&hei=620&fmt=png-alpha"
           />
           <Product
             id="23445930"
-            title="Shoe"
-            price={98.99}
+            title="Adidas ZX 2K Boost 20"
+            price={5600}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://i31.takemore.net/images/products/62/12/45/adidas-gz7733-zx_2k_boost_20-1.jpg"
           />
           <Product
             id="3254354345"
-            title="Shoe"
-            price={598.99}
+            title="Adidas Superstar Shoes"
+            price={11999}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/70/711/8350/100/1/736338250/736338250_1_360x464.webp"
           />
         </div>
 
         <div className="home__row">
           <Product
             id="90829332"
-            title="Shoe"
-            price={1094.98}
+            title="NB 1080 Black Running Shoes"
+            price={15999}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+            image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIrjpYJUsDQNS4giKzBtBBtmQMRWcjqyKVKeFr49TaISfFOGED"
           />
 
           <Product
             id="23445930"
-            title="Shoe"
-            price={98.99}
+            title="NB 991 Eclipse Running Shoes"
+            price={29999}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRR2itqkEJBZ2F9s43EJfssWDm02vgzAs0gz74YxhOUIwyCvQgU"
           />
           <Product
             id="23445930"
-            title="Shoe"
-            price={98.99}
+            title="NB 550 White"
+            price={15999}
 
-            image="https://media.gq.com/photos/6177129f5f26fedaa5b6f05f/master/w_2000,h_1333,c_limit/1_Travis_Scott_x_Fragment_Design_Jordan_1_low_sneaker.jpghttps://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://i.ebayimg.com/images/g/nkMAAOSwHJNjPzqE/s-l500.png"
           />
-        </div><div className="home_row">
-          <button class="cta">
-            <span class="hover-underline-animation"> Shop now </span>
-            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-              <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-            </svg>
-          </button>
-        </div> */}
+        </div>
       </div>
     </div >
   );
