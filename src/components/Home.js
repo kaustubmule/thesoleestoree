@@ -57,7 +57,7 @@ function Home() {
           </div>
           <div className="brand">
             <span class="parallax-text" text="ADIDAS">
-              ADIDAS
+              ADIBAS
             </span>
             <img className="brandShoe" src="https://freepngimg.com/thumb/adidas_shoes/3-2-adidas-shoes-png-clipart.png" alt="Adidas sneaker" />
           </div>
