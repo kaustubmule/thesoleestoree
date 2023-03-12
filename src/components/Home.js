@@ -69,7 +69,7 @@ function Home() {
           </div>
           <div className="brand">
             <span class="parallax-text" text="SKECHERS">
-              SKETCHERS
+              SKECHERS
             </span>
             <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
           </div>
