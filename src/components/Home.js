@@ -127,6 +127,7 @@ function Home() {
 
             image="https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/70/711/8350/100/1/736338250/736338250_1_360x464.webp"
           />
+
         </div>
 
         <div className="home__row">
