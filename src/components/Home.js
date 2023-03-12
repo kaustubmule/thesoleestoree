@@ -4,7 +4,7 @@ import "./Animation.css";
 import { useState } from "react"
 
 import Product from "./Product";
-
+import { Link } from "react-router-dom";
 function Home() {
   const [showBImage, setShowBImage] = useState(true);
 
@@ -55,12 +55,15 @@ function Home() {
             </span>
             <img className="brandShoe" src="https://i.ibb.co/dgvM3z2/j-WQq0t-Foi5i-Tvjojw-Or-BL-transformed.png" alt="Nike sneaker" />
           </div>
-          <div className="brand">
-            <span class="parallax-text" text="ADIDAS">
-              ADIDAS
-            </span>
-            <img className="brandShoe" src="https://freepngimg.com/thumb/adidas_shoes/3-2-adidas-shoes-png-clipart.png" alt="Adidas sneaker" />
-          </div>
+          <Link to="/adidas">
+            <div className="brand">
+              <span class="parallax-text" text="ADIDAS">
+                ADIDAS
+              </span>
+              <img className="brandShoe" src="https://freepngimg.com/thumb/adidas_shoes/3-2-adidas-shoes-png-clipart.png" alt="Adidas sneaker" />
+            </div>
+          </Link>
+
           <div className="brand">
             <span class="parallax-text" text="PUMA">
               PUMA

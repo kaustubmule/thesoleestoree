@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
 import Favorite from "./components/Favorite.js";
 import Checkout from "./components/Checkout.js";
+import Adidas from "./components/Adidas.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<><Header /><Home /></>} />
         <Route exact path="/login" element={<><Header /><Login /></>} />
+        <Route exact path="/adidas" element={<><Header /><Adidas /></>} />
         <Route exact path="/favorite" element={<><Header /><Favorite /></>} />
         <Route exact path="/checkout" element={<><Header /><Checkout /></>} />
       </Routes>
