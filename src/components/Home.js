@@ -83,21 +83,21 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="12321341"
+            id="11"
             title="AJ1 Mid Light Smoke Grey"
             price={25000}
 
             image="https://www.kindpng.com/picc/m/576-5762379_air-jordan-1-mid-light-smoke-grey-554724.png"
           />
           <Product
-            id="49538094"
+            id="12"
             title="AJ1 Mid SE Craft"
             price={12295}
 
             image="https://cdn.shopify.com/s/files/1/0670/7323/products/DM9652-102-PHSRH000-2000_2000x.png?v=1676946956"
           />
           <Product
-            id="23445930"
+            id="13"
             title="AJ1 Retro High OG"
             price={16995}
 
@@ -107,21 +107,21 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="4903850"
+            id="21"
             title="Adi2000 Shoes"
             price={10999}
 
             image="https://images.footlocker.com/is/image/FLEU/316703328704?wid=620&hei=620&fmt=png-alpha"
           />
           <Product
-            id="23445930"
+            id="22"
             title="Adidas ZX 2K Boost 20"
             price={5600}
 
             image="https://i31.takemore.net/images/products/62/12/45/adidas-gz7733-zx_2k_boost_20-1.jpg"
           />
           <Product
-            id="3254354345"
+            id="23"
             title="Adidas Superstar Shoes"
             price={11999}
 
@@ -132,7 +132,7 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="90829332"
+            id="31"
             title="NB 1080 Black Running Shoes"
             price={15999}
 
@@ -140,14 +140,14 @@ function Home() {
           />
 
           <Product
-            id="23445930"
+            id="32"
             title="NB 991 Eclipse Running Shoes"
             price={29999}
 
             image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRR2itqkEJBZ2F9s43EJfssWDm02vgzAs0gz74YxhOUIwyCvQgU"
           />
           <Product
-            id="23445930"
+            id="33"
             title="NB 550 White"
             price={15999}
 

@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
 import Favorite from "./components/Favorite.js";
+import Checkout from "./components/Checkout.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<><Header /><Home /></>} />
         <Route exact path="/login" element={<><Header /><Login /></>} />
         <Route exact path="/favorite" element={<><Header /><Favorite /></>} />
+        <Route exact path="/checkout" element={<><Header /><Checkout /></>} />
       </Routes>
     </Router>
 

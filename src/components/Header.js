@@ -6,9 +6,12 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+
+  console.log(basket);
 
   const [isHover, setIsHover] = useState(false);
 
@@ -65,7 +68,7 @@ function Header() {
             style={{ maxHeight: "100px" }}
           >
 
-            <div className="header__option">  
+            <div className="header__option">
               <span className="header__optionLineOne">Hello User</span>
               <span className="header__optionLineTwo">Sign In</span>
             </div>
@@ -82,10 +85,10 @@ function Header() {
                   className="header_favIcon"></FavoriteIcon>
               </Nav.Link>
             </Link>
-            <Nav.Link href="/">
+            <Nav.Link href="/checkout">
               <LocalMallIcon className="header_localMallIcon" />
               <span className="header__optionLineTwo header__basketCount">
-                0
+                {basket?.length}
               </span>
             </Nav.Link>
           </Nav>
