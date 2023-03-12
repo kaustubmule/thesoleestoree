@@ -21,6 +21,13 @@
   margin-right: 5px;
 }
 
+@media screen and (min-width: 80rem) {
+  .home__row {
+    margin: 1em 5em;
+    margin-right: 80px;
+  }
+}
+
 /* The switch - the box around the slider */
 .switch {
   font-size: 17px;
@@ -88,4 +95,15 @@ input:checked + .slider:before {
   margin-bottom: 10px;
   border-radius: 50px;
   background-color: #00000089;
+}
+.showMore_shoes {
+  display: grid;
+  align-items: center;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+.showMore_shoes > button {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 50px;
 }
