@@ -153,7 +153,7 @@ function Home() {
 
             image="https://i.ebayimg.com/images/g/nkMAAOSwHJNjPzqE/s-l500.png"
           />
-          
+
         </div>
         <div className="showMore_shoes">
           <button className="showMore">Show More</button>
