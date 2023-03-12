@@ -68,7 +68,7 @@ function Home() {
             <img className="brandShoe" src="https://i.ibb.co/C2KHdnP/Sqy-Rz2-Rj-Mv3-Op-Ah7-4t-Wi-transformed.png" alt="Puma sneaker" />
           </div>
           <div className="brand">
-            <span class="parallax-text" text="SKETCHERS">
+            <span class="parallax-text" text="SKECHERS">
               SKETCHERS
             </span>
             <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
