@@ -2,9 +2,9 @@ import React from "react";
 import "./Home.css";
 import "./Animation.css";
 import { useState } from "react"
-
 import Product from "./Product";
 import { Link } from "react-router-dom";
+
 function Home() {
   const [showBImage, setShowBImage] = useState(true);
 
@@ -19,6 +19,7 @@ function Home() {
       setMyStyle({
         color: 'white',
         backgroundColor: 'black',
+        
       })
     }
     else {
@@ -49,12 +50,15 @@ function Home() {
 
 
         <div className="brands" style={{ marginTop: '350px' }}>
-          <div className="brand">
-            <span class="parallax-text" text="NIKE">
-              NIKE
-            </span>
-            <img className="brandShoe" src="https://i.ibb.co/dgvM3z2/j-WQq0t-Foi5i-Tvjojw-Or-BL-transformed.png" alt="Nike sneaker" />
-          </div>
+          <Link to="/nike">
+            <div className="brand">
+              <span class="parallax-text" text="NIKE">
+                NIKE
+              </span>
+              <img className="brandShoe" src="https://i.ibb.co/dgvM3z2/j-WQq0t-Foi5i-Tvjojw-Or-BL-transformed.png" alt="Nike sneaker" />
+            </div>
+          </Link>
+
           <Link to="/adidas">
             <div className="brand">
               <span class="parallax-text" text="ADIDAS">
@@ -64,24 +68,33 @@ function Home() {
             </div>
           </Link>
 
-          <div className="brand">
-            <span class="parallax-text" text="PUMA">
-              PUMA
-            </span>
-            <img className="brandShoe" src="https://i.ibb.co/C2KHdnP/Sqy-Rz2-Rj-Mv3-Op-Ah7-4t-Wi-transformed.png" alt="Puma sneaker" />
-          </div>
-          <div className="brand">
-            <span class="parallax-text" text="SKECHERS">
-              SKECHERS
-            </span>
-            <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
-          </div>
-          <div className="brand">
-            <span class="parallax-text" text="REEBOK">
-              REEBOK
-            </span>
-            <img className="brandShoe" src="https://i.ibb.co/GWB0sRb/TRk-C-Od-Ka-GXnbs6rtda4n-transformed.png" alt="Reebok sneaker" />
-          </div>
+          <Link to="/puma">
+            <div className="brand">
+              <span class="parallax-text" text="PUMA">
+                PUMA
+              </span>
+              <img className="brandShoe" src="https://i.ibb.co/C2KHdnP/Sqy-Rz2-Rj-Mv3-Op-Ah7-4t-Wi-transformed.png" alt="Puma sneaker" />
+            </div>
+          </Link>
+
+          <Link to="/skechers">
+            <div className="brand">
+              <span class="parallax-text" text="SKECHERS">
+                SKECHERS
+              </span>
+              <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
+            </div>
+          </Link>
+
+          <Link to="/reebok">
+            <div className="brand">
+              <span class="parallax-text" text="REEBOK">
+                REEBOK
+              </span>
+              <img className="brandShoe" src="https://i.ibb.co/GWB0sRb/TRk-C-Od-Ka-GXnbs6rtda4n-transformed.png" alt="Reebok sneaker" />
+            </div>
+          </Link>
+
         </div>
 
         <div className="home__row">
@@ -159,7 +172,7 @@ function Home() {
 
         </div>
         <div className="showMore_shoes">
-          <button className="showMore">Show More</button>
+          <button className="showMore" style={{ myStyle }}>Show More</button>
         </div>
       </div>
 
