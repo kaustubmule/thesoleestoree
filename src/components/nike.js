@@ -1,9 +1,12 @@
 import React from 'react'
 
-function nike() {
+function Nike() {
   return (
-    <div>nike</div>
+    <div className='nike_home'>
+      Nikeeeeee
+    </div>
+    
   )
 }
 
-export default nike
+export default Nike
