@@ -1,20 +1,17 @@
 import React from 'react'
 import "./Filter.css";
-import Product from "./Product.js";
+import { Link } from "react-router-dom";
 
-function Filter() {
+function Filter(props) {
     return (
         <div>
-            <div class="post-filter container">
-                <span class="filter-item active-filter" data-filter="all"> Nike </span>
-                <span class="filter-item active-filter" data-filter="all"> Adidas </span>
-                <span class="filter-item active-filter" data-filter="all"> Puma </span>
-                <span class="filter-item active-filter" data-filter="all"> Reebok </span>
-                <span class="filter-item active-filter" data-filter="all"> Skechers </span>
-            </div>
-     
+            <Link to="/nike">
+                <div className="showMore_shoes"> 
+                    <button className="showMore"> SHOW NIKE </button>
+                </div>
+            </Link>
         </div>
-    )
+    );
 }
 
 export default Filter
