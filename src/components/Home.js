@@ -109,8 +109,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="21"
-            title="JEREMY SCOTT OPAL WINGS 4.0 SHOES
-            "
+            title="JEREMY SCOTT OPAL WINGS 4.0 "
             price={21999}
 
             image="https://assets.adidas.com/images/w_600,f_auto,q_auto/6a5aea66fb3b45478113af500018a847_9366/Jeremy_Scott_Opal_Wings_4.0_Shoes_Black_IE6862_01_standard.jpg"
@@ -124,7 +123,7 @@ function Home() {
           />
           <Product
             id="23"
-            title="ADIDAS X MARIMEKKO SUPERSTAR SHOES"
+            title="ADIDAS X MARIMEKKO SUPERSTAR"
             price={11999}
 
             image="https://assets.adidas.com/images/w_600,f_auto,q_auto/c61a24587171400fba8daf8800e9a5c3_9366/adidas_x_Marimekko_Superstar_Shoes_White_HP9779_01_standard.jpg"
