@@ -1,6 +1,6 @@
 // import "./App.css";
 import Home from "./components/Home.js";
-import Login from "./components/Login.js";
+//import Login from "./components/Login.js";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<><Header /><Home /></>} />
-        <Route exact path="/login" element={<><Header /><Login /></>} />
+        {/* <Route exact path="/login" element={<><Header /><Login /></>} /> */}
         <Route exact path="/favorite" element={<><Header /><Favorite /></>} />
         <Route exact path="/checkout" element={<><Header /><Checkout /></>} />
         <Route exact path="/adidas" element={<><Header /><Adidas /></>} />
