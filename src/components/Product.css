@@ -5,69 +5,15 @@
   justify-content: flex-end;
   margin: 20px;
   padding: 10px;
-  background-color: blue;
   width: 100%;
   max-height: 400px;
   min-width: 100px;
-  background-color: white;
+  background-color: #f5f5f5;
   color: black;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 6px;
   aspect-ratio: 16/9;
-}
-
-@media (min-width: 1600px) {
-  .product {
-    min-height: 395px;
-    width: 520px;
-    margin: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .product {
-    display: flex;
-    width: 100%;
-    max-height: none;
-    margin: 30px;
-    padding: 5px;
-    overflow: hidden;
-  }
-  .product > button {
-    width: 10px;
-  }
-  .product__info {
-    display: block;
-    font-size: x-small;
-    margin-left: 500px;
-    margin-right: 0px;
-  }
-  .product__price {
-    padding-right: 100px;
-    margin-right: 510px;
-    font-size: medium;
-  }
-  .product > img {
-    width: 100%;
-    height: auto;
-    margin-right: 60px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .product {
-    max-height: 400px;
-  }
-}
-@media (max-width: 1400px) {
-  .product {
-    max-height: 235px;
-  }
-
-  .product__price {
-    margin-left: -35px;
-  }
 }
 
 .product > img {

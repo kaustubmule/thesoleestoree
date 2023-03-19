@@ -20,16 +20,10 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-/* mobile */
-@media only screen and (max-width: 600px) {
-  .home__row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+
 @media screen and (min-width: 80rem) {
   .home__row {
-    margin: 2em 5em;
+    margin: 1em 5em;
     margin-right: 80px;
   }
 }
@@ -105,44 +99,11 @@ input:checked + .slider:before {
 .showMore_shoes {
   display: grid;
   align-items: center;
-  margin-left: 605px;
-  margin-right: 605px;
+  margin-left: 600px;
+  margin-right: 600px;
 }
-
 .showMore_shoes > button {
   background-color: #fff;
-  border: 0 solid #e2e8f0;
+  border-radius: 5px;
   margin-bottom: 50px;
-  border-radius: 6px;
-  box-sizing: border-box;
-  color: #0d172a;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1;
-  padding: 1rem 1.6rem;
-  text-align: center;
-  text-decoration: none #0d172a solid;
-  text-decoration-thickness: auto;
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.showMore_shoes > button:hover {
-  background-color: #1e293b;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .showMore_shoes > button {
-    font-size: 1.125rem;
-    padding: 1rem 2rem;
-  }
 }
