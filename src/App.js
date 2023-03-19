@@ -1,6 +1,6 @@
 // import "./App.css";
 import Home from "./components/Home.js";
-//import Login from "./components/Login.js";
+import Login from "./components/Login.js";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
