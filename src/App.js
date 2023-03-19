@@ -1,6 +1,5 @@
 // import "./App.css";
 import Home from "./components/Home.js";
-//import Login from "./components/Login.js";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
@@ -13,12 +12,44 @@ import Skechers from "./components/Skechers.js";
 import Puma from "./components/Puma.js";
 import Reebok from "./components/Reebok.js";
 import Filter from "./components/Filter.js";
+import Login from "./components/Login.js";
+import { useStateValue } from "./components/StateProvider.js";
+import 'firebase/compat/auth'; //v9
+import React, { useEffect } from "react";
+
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
+  // useEffect(() => {
+  //   const unsubscribe = auth.onAuthStateChanged((authUser) => {
+  //     if (authUser) {
+  //       // Saving user login info.
+  //       dispatch({
+  //         type: "SET_USER",
+  //         user: authUser,
+  //       });
+  //     } else {
+  //       // Logging out user
+  //       dispatch({
+  //         type: "SET_USER",
+  //         user: null,
+  //       });
+  //     }
+  //   });
+
+
+
+  //   return () => {
+  //     unsubscribe();
+  //   };
+  // }, []);
+
+  // console.log(user);
+
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<><Header /><Home /></>} />
-        {/* <Route exact path="/login" element={<><Header /><Login /></>} /> */}
         <Route exact path="/favorite" element={<><Header /><Favorite /></>} />
         <Route exact path="/checkout" element={<><Header /><Checkout /></>} />
         <Route exact path="/adidas" element={<><Header /><Adidas /></>} />
@@ -26,6 +57,7 @@ function App() {
         <Route exact path="/skechers" element={<><Header /><Skechers /></>} />
         <Route exact path="/puma" element={<><Header /><Puma /></>} />
         <Route exact path="/reebok" element={<><Header /><Reebok /></>} />
+        <Route exact path="/login" element={<><Header /><Login /></>} />
         <Route exact path="/filter" element={<><Header /><Filter /></>} />
       </Routes>
     </Router>

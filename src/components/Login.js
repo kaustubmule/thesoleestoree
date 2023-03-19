@@ -1,56 +1,70 @@
 import React, { useState } from "react";
-import "./Login.css";
+import "./Login.css"
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import 'firebase/compat/auth'; //v9
 
 function Login() {
-    const navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const history = useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    const signIn = async (e) => {
-        e.preventDefault();
-        try {
-            const user = await signInWithEmailAndPassword(auth, email, password);
-            console.log(user);
-            if (auth) {
-                navigate("/")
-            }
-        } catch (error) {
-            alert(error.message);
-        }
-    }
-    const register = async (e) => {
-        e.preventDefault();
-        try {
-            const user = await createUserWithEmailAndPassword(auth, email, password);
-            console.log(user);
-        } catch (error) {
-            alert(error.message);
-        }
-    }
+    const login = (event) => {
+        event.preventDefault(); // Stops the default refresh functionality of login button!!!
+        auth
+            .signInWithEmailAndPassword(email, password)
+            .then((auth) => {
+                history.push("/");
+            })
+            .catch((error) => alert(error));
+    };
+
+    const register = (event) => {
+        event.preventDefault();
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then((auth) => {
+                history.push("/");
+            })
+            .catch((error) => alert(error));
+    };
+
     return (
         <div className="login">
             <Link to="/">
-                <img className="login_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="" />
+                <img
+                    className="login__logo"
+                    src="https://i.ibb.co/6bZ6dgs/thesolestore.png"
+                    alt=""
+                />
             </Link>
-            <div className="login_container">
-                <h1>Sign-in</h1>
+            <div className="login__container ">
+                <h1>Sign In</h1>
                 <form>
-                    <h5>E-mail</h5>
-                    <input type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                    <h5>Email</h5>
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
                     <h5>Password</h5>
-                    <input type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
-                    <button onClick={signIn} type="submit" className="login_signInButton">Sign In</button>
-                    <p>
-                        By signing-in you agree to Amazon Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and out Interest-Based Ads Notice.
-                    </p>
-                    <button onClick={register} className="login_registerButton">Create your Amazon account</button>
+                    <input
+                        value={password}
+                        type="password"
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
+                    <button type="submit" className="login__signInButton" onClick={login}>
+                        Sign-In
+                    </button>
                 </form>
+                <p>
+                    Don't have an account? Create New Account
+                </p>
+                <button onClick={register} className="login__registerButton">
+                    Create your Account{" "}
+                </button>
             </div>
         </div>
-    )
+    );
 }
 
 export default Login;
