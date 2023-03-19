@@ -42,7 +42,7 @@ function Home() {
 
         {showBImage ? <img
           className="home__image "
-          src="https://i.ibb.co/MsX4TrQ/Untitled-design.png"
+          src="image.png"
           alt=""
         /> : <img className="home__image " src="https://i.ibb.co/Cv0DGnx/thesolestorewhite.png" alt="Image" />}
 
@@ -50,98 +50,84 @@ function Home() {
 
 
         <div className="brands" style={{ marginTop: '350px' }}>
-          <Link to="/nike">
-            <div className="brand">
-              <span class="parallax-text" text="NIKE">
-                NIKE
-              </span>
-              <img className="brandShoe" src="https://i.ibb.co/dgvM3z2/j-WQq0t-Foi5i-Tvjojw-Or-BL-transformed.png" alt="Nike sneaker" />
-            </div>
-          </Link>
-
-          <Link to="/adidas">
-            <div className="brand">
-              <span class="parallax-text" text="ADIDAS">
-                ADIDAS
-              </span>
-              <img className="brandShoe" src="https://freepngimg.com/thumb/adidas_shoes/3-2-adidas-shoes-png-clipart.png" alt="Adidas sneaker" />
-            </div>
-          </Link>
-
-          <Link to="/puma">
-            <div className="brand">
-              <span class="parallax-text" text="PUMA">
-                PUMA
-              </span>
-              <img className="brandShoe" src="https://i.ibb.co/C2KHdnP/Sqy-Rz2-Rj-Mv3-Op-Ah7-4t-Wi-transformed.png" alt="Puma sneaker" />
-            </div>
-          </Link>
-
-          <Link to="/skechers">
-            <div className="brand">
-              <span class="parallax-text" text="SKECHERS">
-                SKECHERS
-              </span>
-              <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
-            </div>
-          </Link>
-
-          <Link to="/reebok">
-            <div className="brand">
-              <span class="parallax-text" text="REEBOK">
-                REEBOK
-              </span>
-              <img className="brandShoe" src="https://i.ibb.co/GWB0sRb/TRk-C-Od-Ka-GXnbs6rtda4n-transformed.png" alt="Reebok sneaker" />
-            </div>
-          </Link>
-
+          <div className="brand">
+            <span class="parallax-text" text="NIKE">
+              NIKE
+            </span>
+            <img className="brandShoe" src="https://i.ibb.co/dgvM3z2/j-WQq0t-Foi5i-Tvjojw-Or-BL-transformed.png" alt="Nike sneaker" />
+          </div>
+          <div className="brand">
+            <span class="parallax-text" text="ADIDAS">
+              ADIDAS
+            </span>
+            <img className="brandShoe" src="https://freepngimg.com/thumb/adidas_shoes/3-2-adidas-shoes-png-clipart.png" alt="Adidas sneaker" />
+          </div>
+          <div className="brand">
+            <span class="parallax-text" text="PUMA">
+              PUMA
+            </span>
+            <img className="brandShoe" src="https://i.ibb.co/C2KHdnP/Sqy-Rz2-Rj-Mv3-Op-Ah7-4t-Wi-transformed.png" alt="Puma sneaker" />
+          </div>
+          <div className="brand">
+            <span class="parallax-text" text="SKECHERS">
+              SKECHERS
+            </span>
+            <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
+          </div>
+          <div className="brand">
+            <span class="parallax-text" text="REEBOK">
+              REEBOK
+            </span>
+            <img className="brandShoe" src="https://i.ibb.co/GWB0sRb/TRk-C-Od-Ka-GXnbs6rtda4n-transformed.png" alt="Reebok sneaker" />
+          </div>
         </div>
 
         <div className="home__row">
           <Product
             id="11"
-            title="AJ1 Mid Light Smoke Grey"
-            price={25000}
+            title="JORDAN 1 LOW MULTI-COLOR (W)"
+            price={19900}
 
-            image="https://www.kindpng.com/picc/m/576-5762379_air-jordan-1-mid-light-smoke-grey-554724.png"
+            image="https://mikaandmia.com/wp-content/uploads/2022/11/Jordan-1-Low-SE-Multi-Color-W-PhotoRoom.png"
           />
           <Product
             id="12"
-            title="AJ1 Mid SE Craft"
-            price={12295}
+            title="adidas x gucci gazelle pink"
+            price={65000}
 
-            image="https://cdn.shopify.com/s/files/1/0670/7323/products/DM9652-102-PHSRH000-2000_2000x.png?v=1676946956"
+            image="https://images.stockx.com/images/adidas-x-Gucci-Gazelle-Pink.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1656093961&q=75"
           />
           <Product
             id="13"
-            title="AJ1 Retro High OG"
-            price={16995}
+            title="NIKE DUNK LOW INDUSTRIAL BLUE SASHIKO"
+            price={20000}
 
-            image="https://cdn.shopify.com/s/files/1/0603/3031/1875/products/1_f1760765-8b5a-43e1-b6fc-8618b6e52e7c_540x.jpg?v=1672758518"
+            image="https://images.stockx.com/images/Nike-Dunk-Low-Industrial-Blue-Sashiko-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1676277261&q=75"
           />
         </div>
 
         <div className="home__row">
           <Product
             id="21"
-            title="Adi2000 Shoes"
-            price={10999}
+            title="JEREMY SCOTT OPAL WINGS 4.0 SHOES
+            "
+            price={21999}
 
-            image="https://images.footlocker.com/is/image/FLEU/316703328704?wid=620&hei=620&fmt=png-alpha"
+            image="https://assets.adidas.com/images/w_600,f_auto,q_auto/6a5aea66fb3b45478113af500018a847_9366/Jeremy_Scott_Opal_Wings_4.0_Shoes_Black_IE6862_01_standard.jpg"
           />
           <Product
             id="22"
-            title="Adidas ZX 2K Boost 20"
-            price={5600}
+            title="PUREBOOST 22 SHOES"
+            price={12900}
 
-            image="https://i31.takemore.net/images/products/62/12/45/adidas-gz7733-zx_2k_boost_20-1.jpg"
+            image="https://assets.adidas.com/images/w_600,f_auto,q_auto/8024f2fd73864c04a28daf4701571e8e_9366/Pureboost_22_Shoes_White_HQ8585_01_standard.jpg"
           />
           <Product
             id="23"
-            title="Adidas Superstar Shoes"
+            title="ADIDAS X MARIMEKKO SUPERSTAR SHOES"
             price={11999}
 
-            image="https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/70/711/8350/100/1/736338250/736338250_1_360x464.webp"
+            image="https://assets.adidas.com/images/w_600,f_auto,q_auto/c61a24587171400fba8daf8800e9a5c3_9366/adidas_x_Marimekko_Superstar_Shoes_White_HP9779_01_standard.jpg"
           />
 
         </div>
