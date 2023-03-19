@@ -2,8 +2,8 @@ import React from "react";
 import "./Home.css";
 import "./Animation.css";
 import { useState } from "react"
-
 import Product from "./Product";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [showBImage, setShowBImage] = useState(true);
@@ -19,6 +19,7 @@ function Home() {
       setMyStyle({
         color: 'white',
         backgroundColor: 'black',
+        
       })
     }
     else {
@@ -71,7 +72,7 @@ function Home() {
             <span class="parallax-text" text="SKECHERS">
               SKECHERS
             </span>
-            <img className="brandShoe" src="https://i.ibb.co/st4ygw7/image-removebg-preview-1.png" alt="SKETCHERS sneaker" />
+            <img className="brandShoe" src="https://i.ibb.co/ky5LgCT/png-clipart-sneakers-converse-adidas-shoe-skechers-shose-orange-outdoor-shoe-thumbnail-transformed.png" alt="SKETCHERS sneaker" />
           </div>
           <div className="brand">
             <span class="parallax-text" text="REEBOK">
@@ -157,7 +158,7 @@ function Home() {
 
         </div>
         <div className="showMore_shoes">
-          <button className="showMore">Show More</button>
+          <button className="showMore" style={{ myStyle }}>Show More</button>
         </div>
       </div>
 
