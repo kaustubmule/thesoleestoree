@@ -12,6 +12,8 @@ import Nike from "./components/Nike.js";
 import Skechers from "./components/Skechers.js";
 import Puma from "./components/Puma.js";
 import Reebok from "./components/Reebok.js";
+import Filter from "./components/Filter.js";
+
 function App() {
   return (
     <Router>
@@ -25,6 +27,7 @@ function App() {
         <Route exact path="/skechers" element={<><Header /><Skechers /></>} />
         <Route exact path="/puma" element={<><Header /><Puma /></>} />
         <Route exact path="/reebok" element={<><Header /><Reebok /></>} />
+        <Route exact path="/filter" element={<><Header /><Filter /></>} />
       </Routes>
     </Router>
 

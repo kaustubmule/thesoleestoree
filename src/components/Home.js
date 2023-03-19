@@ -171,9 +171,11 @@ function Home() {
           />
 
         </div>
+        <Link to="/filter">
         <div className="showMore_shoes">
           <button className="showMore" style={{ myStyle }}>Show More</button>
         </div>
+        </Link>
       </div>
 
     </div >
