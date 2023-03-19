@@ -99,7 +99,7 @@ function Home() {
           />
           <Product
             id="13"
-            title="NIKE DUNK LOW INDUSTRIAL BLUE SASHIKO"
+            title="NIKE DUNK LOW BLUE SASHIKO"
             price={20000}
 
             image="https://images.stockx.com/images/Nike-Dunk-Low-Industrial-Blue-Sashiko-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1676277261&q=75"
@@ -109,7 +109,8 @@ function Home() {
         <div className="home__row">
           <Product
             id="21"
-            title="JEREMY SCOTT OPAL WINGS 4.0 "
+            title="JEREMY SCOTT OPAL WINGS 4.0 SHOES
+            "
             price={21999}
 
             image="https://assets.adidas.com/images/w_600,f_auto,q_auto/6a5aea66fb3b45478113af500018a847_9366/Jeremy_Scott_Opal_Wings_4.0_Shoes_Black_IE6862_01_standard.jpg"
@@ -123,7 +124,7 @@ function Home() {
           />
           <Product
             id="23"
-            title="ADIDAS X MARIMEKKO SUPERSTAR"
+            title="ADIDAS X MARIMEKKO SUPERSTAR SHOES"
             price={11999}
 
             image="https://assets.adidas.com/images/w_600,f_auto,q_auto/c61a24587171400fba8daf8800e9a5c3_9366/adidas_x_Marimekko_Superstar_Shoes_White_HP9779_01_standard.jpg"

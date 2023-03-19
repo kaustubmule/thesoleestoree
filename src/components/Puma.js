@@ -1,7 +1,7 @@
 import React from 'react'
 import Product from "./Product"
-  
-function Nike() {
+
+function Puma() {
   return (
     <div>
       <div className="home__row">
@@ -30,4 +30,4 @@ function Nike() {
   )
 }
 
-export default Nike
+export default Puma
