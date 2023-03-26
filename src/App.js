@@ -20,45 +20,20 @@ import React, { useEffect } from "react";
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
-  // useEffect(() => {
-  //   const unsubscribe = auth.onAuthStateChanged((authUser) => {
-  //     if (authUser) {
-  //       // Saving user login info.
-  //       dispatch({
-  //         type: "SET_USER",
-  //         user: authUser,
-  //       });
-  //     } else {
-  //       // Logging out user
-  //       dispatch({
-  //         type: "SET_USER",
-  //         user: null,
-  //       });
-  //     }
-  //   });
-
-
-
-  //   return () => {
-  //     unsubscribe();
-  //   };
-  // }, []);
-
-  // console.log(user);
-
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<><Header /><Home /></>} />
         <Route exact path="/favorite" element={<><Header /><Favorite /></>} />
         <Route exact path="/checkout" element={<><Header /><Checkout /></>} />
-        <Route exact path="/adidas" element={<><Header /><Adidas /></>} />
-        <Route exact path="/nike" element={<><Header /><Nike /></>} />
-        <Route exact path="/skechers" element={<><Header /><Skechers /></>} />
-        <Route exact path="/puma" element={<><Header /><Puma /></>} />
-        <Route exact path="/reebok" element={<><Header /><Reebok /></>} />
+        <Route exact path="/adidas" element={<><Header /><Filter /><Adidas /></>} />
+        <Route exact path="/nike" element={<><Header /><Filter /><Nike /></>} />
+        <Route exact path="/skechers" element={<><Header /><Filter /><Skechers /></>} />
+        <Route exact path="/puma" element={<><Header /><Filter /><Puma /></>} />
+        <Route exact path="/reebok" element={<><Header /><Filter /><Reebok /></>} />
+        <Route exact path="/skechers" element={<><Header /><Filter /><Skechers /></>} />
         <Route exact path="/login" element={<><Header /><Login /></>} />
-        <Route exact path="/filter" element={<><Header /><Filter /></>} />
+        <Route exact path="/filter" element={<><Header /><Filter /><Nike /></>} />
       </Routes>
     </Router>
 

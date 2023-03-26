@@ -19,7 +19,7 @@ function Home() {
       setMyStyle({
         color: 'white',
         backgroundColor: 'black',
-        
+
       })
     }
     else {
@@ -42,7 +42,7 @@ function Home() {
 
         {showBImage ? <img
           className="home__image "
-          src="image.png"
+          src="https://i.ibb.co/MsX4TrQ/Untitled-design.png"
           alt=""
         /> : <img className="home__image " src="https://i.ibb.co/Cv0DGnx/thesolestorewhite.png" alt="Image" />}
 
@@ -157,10 +157,13 @@ function Home() {
           />
 
         </div>
+
         <Link to="/filter">
-        <div className="showMore_shoes">
-          <button className="showMore" style={{ myStyle }}>Show More</button>
-        </div>
+          <div className="showMore_shoes">
+            <button className="showMore">
+              Show More
+            </button>
+          </div>
         </Link>
       </div>
 

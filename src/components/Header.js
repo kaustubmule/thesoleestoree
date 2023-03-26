@@ -27,6 +27,10 @@ function Header() {
     color: isHover ? 'red' : 'white',
   };
 
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noreferrer');
+  };
+
   return (
     <Navbar expand="lg" fixed="top" style={{
       height: "60px",
@@ -72,11 +76,35 @@ function Header() {
               <span className="header__optionLineOne">Hello User</span>
               <span className="header__optionLineTwo">Sign In</span>
             </div>
-            <Link to="/login">
+
+
+            {/* 
+            <Link to="http://localhost:3000/sample_data/add">
               <Nav.Link href="/" >
                 <PersonRoundedIcon className="header_personRoundedIcon"></PersonRoundedIcon>
               </Nav.Link>
-            </Link>
+            </Link> */}
+
+
+            <button
+              role="link"
+              onClick={() => openInNewTab('http://localhost:3001/sample_data/add')} style={{
+                background: "none",
+                color: "inherit",
+                border: "none",
+                padding: 0,
+                font: "inherit",
+                cursor: "pointer",
+                outline: "inherit",
+              }}>
+
+              <Nav.Link href="/" >
+                <PersonRoundedIcon className="header_personRoundedIcon"></PersonRoundedIcon>
+              </Nav.Link>
+            </button>
+
+
+
             <Link to="/favorite">
               <Nav.Link href="/" >
                 <FavoriteIcon style={heart}
