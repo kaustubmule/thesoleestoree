@@ -1,7 +1,8 @@
 import React from 'react'
-import Product from "./Product"
+import Product from "../Product";
 
 function Adidas() {
+
     return (
         <div>
             <div className="home__row">

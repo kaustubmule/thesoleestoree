@@ -1,8 +1,15 @@
 .checkout {
   display: grid;
   padding: 20px;
-  background-color: white;
   height: max-content;
+  color: white;
+}
+.checkout__left{
+  background-color: white;
+  color: black;
+}
+.checkout__right {
+  color: black;
 }
 .checkout__title {
   margin-right: 10px;

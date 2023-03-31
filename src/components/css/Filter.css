@@ -20,9 +20,16 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-
+.image {
+  height: 45px;
+  width: auto;
+  object-fit: fill;
+}
+.image:hover {
+  transform: scale(1.4);
+}
 .filter_shoes {
-  margin-left: 440px;
+  padding-left: 50px;
 }
 
 .brandShoes {
@@ -52,8 +59,19 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  height: 75px;
+  width: auto;
 }
 
 .brandShoes:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.flloat {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  border-radius: 50px;
+  background-color: transparent;
+  text-decoration: none;
 }

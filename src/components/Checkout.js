@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from './CheckoutProduct';
-import './Checkout.css';
+import './css/Checkout.css';
 import Subtotal from './Subtotal';
 
 function Checkout() {
@@ -9,6 +9,7 @@ function Checkout() {
 
     return (
         <div className="checkout">
+
             <div className="checkout__left">
 
                 {basket?.length === 0 ? (

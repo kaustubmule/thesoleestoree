@@ -13,14 +13,13 @@
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 6px;
-  aspect-ratio: 16/9;
 }
 
 .product > img {
   height: 300px;
   width: 445px;
   padding: 8vh;
-  object-fit: cover;
+  object-fit:cover;
   object-position: center;
   mix-blend-mode: darken;
   background-blend-mode: difference;
