@@ -4,11 +4,13 @@ import "./css/Animation.css";
 import { useState, useEffect } from "react"
 import Product from "./Product";
 import { Link } from "react-router-dom";
-
+import NIKE from "./Videos/NIKE.mp4";
+import NIKE2 from "./Videos/NIKE2.mp4"
+import ADIDAS from "./Videos/ADIDAS.mp4"
 import Intro from "./Loader/Intro.js";
-
+import Carousel from 'react-bootstrap/Carousel';
 function Home() {
-  const [showBImage, setShowBImage] = useState(true);
+
 
   const [myStyle, setMyStyle] = useState({
     color: 'white',
@@ -16,7 +18,7 @@ function Home() {
   })
 
   const toggleStyle = () => {
-    setShowBImage(!showBImage);
+
     if (myStyle.color === "black") {
       setMyStyle({
         color: 'white',
@@ -41,8 +43,8 @@ function Home() {
   }, [])
 
   return (
-    
-      loading ? <Intro /> :
+
+    loading ? <Intro /> :
       <div className="home" style={myStyle}>
 
         <div className="home__container">
@@ -53,11 +55,27 @@ function Home() {
             </label>
           </div>
 
-          {showBImage ? <img
-            className="home__image "
-            src="https://i.ibb.co/MsX4TrQ/Untitled-design.png"
-            alt=""
-          /> : <img className="home__image " src="https://i.ibb.co/Cv0DGnx/thesolestorewhite.png" alt="Image" />}
+
+          <Carousel className="home__slide" controls={false}>
+            <Carousel.Item className="slide" interval={20000}>
+              <video autoPlay loop muted height={"850"} width={"100%"}>
+                <source src={NIKE} type="video/mp4" />
+              </video>
+            </Carousel.Item>
+            <Carousel.Item className="slide" interval={40000}>
+              <video autoPlay loop muted height={"850"} width={"100%"}>
+                <source src={NIKE2} type="video/mp4" />
+              </video>
+            </Carousel.Item>
+            <Carousel.Item className="slide" interval={28000}>
+              <video autoPlay loop muted height={"850"} width={"100%"}>
+                <source src={ADIDAS} type="video/mp4" />
+              </video>
+            </Carousel.Item>
+
+          </Carousel>
+
+
 
 
           <div className="brands" style={{ marginTop: '350px' }}>

@@ -4,15 +4,22 @@
   margin: 0;
   max-width: auto;
 }
-.home__image {
+.home__slide {
   width: 100%;
-  z-index: -2;
-  object-fit: cover;
-  object-position: top;
-  max-height: 380px;
-  margin-bottom: -200px;
-  mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+  display: flex;
+  max-height: 700px;
+  display: flex;
+  z-index: 2;
 }
+.slide > video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-height: 850px;
+  display: flex;
+  z-index: 2;
+}
+
 .home__row {
   display: flex;
   align-items: center;
@@ -82,6 +89,7 @@ input:checked + .slider:before {
 
 .float {
   position: fixed;
+  display: flex;
   bottom: 0px;
   right: 0px;
   z-index: 2;
