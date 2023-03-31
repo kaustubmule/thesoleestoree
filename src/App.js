@@ -12,8 +12,8 @@ import Skechers from "./components/Brands/Skechers.js";
 import Puma from "./components/Brands/Puma.js";
 import Reebok from "./components/Brands/Reebok.js";
 import NewBalance from "./components/Brands/NewBalance.js";
+import Processing from "./components/Processing.js";
 import Filter from "./components/Filter.js";
-import Login from "./components/Login.js";
 import { useStateValue } from "./components/StateProvider.js";
 import 'firebase/compat/auth'; //v9
 import React, { useState, useEffect } from "react";
@@ -44,8 +44,9 @@ function App() {
             <Route exact path="/reebok" element={<><Header /><Filter /><Reebok /></>} />
             <Route exact path="/skechers" element={<><Header /><Filter /><Skechers /></>} />
             <Route exact path="/newbalance" element={<><Header /><Filter /><NewBalance /></>} />
-            <Route exact path="/login" element={<><Header /><Login /></>} />
             <Route exact path="/filter" element={<><Header /><Filter /><Nike /></>} />
+            <Route exact path="/processing" element={<Processing/>} />
+
           </Routes>
       }
 

@@ -4,15 +4,16 @@
   height: max-content;
   color: white;
 }
-.checkout__left{
+.checkout__left {
   background-color: white;
   color: black;
 }
 .checkout__right {
+  padding-top: 5px;
+  background-color: #f6b656;
   color: black;
 }
 .checkout__title {
-  margin-right: 10px;
   padding: 10px;
   border-bottom: 1px solid lightgrey;
 }

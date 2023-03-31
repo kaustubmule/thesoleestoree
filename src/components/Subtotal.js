@@ -3,6 +3,7 @@ import './css/Subtotal.css';
 import { useStateValue } from './StateProvider';
 import CurrencyFormat from 'react-currency-format';
 import { finalAmount, getBasketTotal } from "./reducer";
+import { Link } from 'react-router-dom';
 
 
 function Subtotal() {
@@ -13,16 +14,12 @@ function Subtotal() {
             <CurrencyFormat
                 renderText={(value) => (
                     <>
-                        <p>
+                        <h4>
                             Number of items : {basket.length}
-                        </p>
+                        </h4>
                         <small><small>Total Amount : {`${value}`}
                             <br />CGST SGST: ₹212.5</small></small>
 
-                        <small className="subtotal__gift">
-                            <input type="checkbox" />
-                            This Order Contains a gift
-                        </small>
                         { }
                     </>
                 )}
@@ -35,7 +32,8 @@ function Subtotal() {
 
             <strong>Final Amount : ₹{finalAmount(basket) + 212.5}</strong>
 
-            <button>Buy Now</button>
+            <Link to='/processing'><button className='btn_buy'>Buy Now</button></Link>
+
         </div>
     )
 }
