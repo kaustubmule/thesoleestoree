@@ -7,97 +7,97 @@ function NewBalance() {
             <div className="home__row">
       <Product
             id="31"
-            title="NANO X1 "
-            price={9999}
+            title="574 CORE"
+            price={15000}
 
-            image="https://img.tatacliq.com/images/i7/437Wx649H/MP000000010378714_437Wx649H_202108221325371.jpeg"
+            image="https://nb.scene7.com/is/image/NB/wl574evg_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
 
           <Product
             id="32"
-            title="Endless Road 3.0"
+            title="Fresh Foam X 860v13"
             price={6599}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012303061_437Wx649H_202202271526081.jpeg"
+            image="https://nb.scene7.com/is/image/NB/w860b13_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
           <Product
             id="33"
-            title="Mega Flexagon"
-            price={6999}
+            title="Made in USA 993 core"
+            price={16999}
 
-            image="https://img.tatacliq.com/images/i7/437Wx649H/MP000000012380750_437Wx649H_202203061436561.jpeg"
+            image="https://nb.scene7.com/is/image/NB/mr993gl_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
   </div>
   <div className="home__row">
       <Product
             id="31"
-            title="Energen Plus"
-            price={5999}
+            title="CT 302"
+            price={15999}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012303060_437Wx649H_202202271526081.jpeg"
+            image="https://nb.scene7.com/is/image/NB/mr993gl_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
 
           <Product
             id="32"
-            title="ZIG Dynamica 3.0"
-            price={5000}
+            title="574"
+            price={15000}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012011674_437Wx649H_202202051619251.jpeg"
+            image="https://nb.scene7.com/is/image/NB/u574wo2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
           <Product
             id="33"
-            title="WALKAWHILE"
+            title="Fresh Foam Arishi v4"
             price={10000}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012016004_437Wx649H_202202052131381.jpeg"
+            image="https://nb.scene7.com/is/image/NB/warisrp4_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
   </div>
   <div className="home__row">
       <Product
             id="31"
-            title="FAST N QUICK XTREME "
-            price={2499}
+            title="550"
+            price={14999}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000013262283_437Wx649H_202205262333211.jpeg"
+            image="https://nb.scene7.com/is/image/NB/bb550nch_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
 
           <Product
             id="32"
-            title="LITE PLUS 3.0"
-            price={4999}
+            title="550"
+            price={14999}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012302868_437Wx649H_202202271516061.jpeg"
+            image="https://nb.scene7.com/is/image/NB/bb550vtb_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
           <Product
             id="33"
-            title="FLOATRIDE ENERGY 3.0 Adventure"
-            price={9000}
+            title="550"
+            price={13999}
 
-            image="https://img.tatacliq.com/images/i7/437Wx649H/MP000000012380742_437Wx649H_202203061432081.jpeg"
+            image="https://nb.scene7.com/is/image/NB/bb550vnb_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
             />
           </div>
           <div className="home__row">
       <Product
             id="31"
-            title="FLASH FLIM TRAIN 2.0"
-            price={4618}
+            title="FUEL CELL Rebel V3"
+            price={14618}
 
-            image="https://img.tatacliq.com/images/i8/437Wx649H/MP000000012071782_437Wx649H_202202092308351.jpeg"
+            image="https://nb.scene7.com/is/image/NB/mfcxcp3_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
 
           <Product
             id="32"
-            title="Mega Flexagon WMN"
-            price={2600}
+            title="57/40"
+            price={12600}
 
-            image="https://img.tatacliq.com/images/i7/437Wx649H/MP000000007830738_437Wx649H_202105201025091.jpeg"
+            image="https://nb.scene7.com/is/image/NB/w5740ccg_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
           />
           <Product
             id="33"
-            title="HIIT 2.0"
-            price={4900}
+            title="327"
+            price={14900}
 
-            image="https://img.tatacliq.com/images/i7/437Wx649H/MP000000010277841_437Wx649H_202108131339421.jpeg"
+            image="https://nb.scene7.com/is/image/NB/ws327ci_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
             />
           </div>
         </div>
