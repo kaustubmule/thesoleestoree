@@ -78,7 +78,7 @@ function Home() {
 
 
 
-          <div className="brands" style={{ marginTop: '350px' }}>
+          <div className="brands" style={{ marginTop: '200px' }}>
             <Link to="/nike">
               <div className="brand">
                 <span class="parallax-text" text="NIKE">
