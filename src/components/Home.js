@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Product from "./Product";
 import { Link } from "react-router-dom";
 import NIKE from "./Videos/NIKE.mp4";
-import NIKE2 from "./Videos/NIKE2.mp4"
+import NB from "./Videos/NB.mp4"
 import ADIDAS from "./Videos/ADIDAS.mp4"
 import Intro from "./Loader/Intro.js";
 import Carousel from 'react-bootstrap/Carousel';
@@ -64,7 +64,7 @@ function Home() {
             </Carousel.Item>
             <Carousel.Item className="slide" interval={40000}>
               <video autoPlay loop muted height={"850"} width={"100%"}>
-                <source src={NIKE2} type="video/mp4" />
+                <source src={NB} type="video/mp4" />
               </video>
             </Carousel.Item>
             <Carousel.Item className="slide" interval={28000}>

@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   max-height: auto;
+  margin-top: -90px;
   z-index: 2;
 }
 
