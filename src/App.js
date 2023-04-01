@@ -15,7 +15,6 @@ import NewBalance from "./components/Brands/NewBalance.js";
 import Processing from "./components/Processing.js";
 import Filter from "./components/Filter.js";
 import { useStateValue } from "./components/StateProvider.js";
-import 'firebase/compat/auth'; //v9
 import React, { useState, useEffect } from "react";
 import Loader from "./components/Loader/Loader.js";
 
@@ -45,7 +44,7 @@ function App() {
             <Route exact path="/skechers" element={<><Header /><Filter /><Skechers /></>} />
             <Route exact path="/newbalance" element={<><Header /><Filter /><NewBalance /></>} />
             <Route exact path="/filter" element={<><Header /><Filter /><Nike /></>} />
-            <Route exact path="/processing" element={<Processing/>} />
+            <Route exact path="/processing" element={<Processing />} />
 
           </Routes>
       }
