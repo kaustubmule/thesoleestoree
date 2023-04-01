@@ -9,6 +9,7 @@ import NB from "./Videos/NB.mp4"
 import ADIDAS from "./Videos/ADIDAS.mp4"
 import Intro from "./Loader/Intro.js";
 import Carousel from 'react-bootstrap/Carousel';
+
 function Home() {
 
 
@@ -198,6 +199,7 @@ function Home() {
 
           </div>
 
+
           <Link to="/filter">
             <div className="showMore_shoes">
               <button className="showMore">
@@ -206,6 +208,7 @@ function Home() {
             </div>
           </Link>
         </div>
+
 
       </div >
 

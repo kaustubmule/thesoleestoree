@@ -1,6 +1,6 @@
 import { Navbar, Nav, Button, Container, Form, FormControl } from "react-bootstrap";
 import "./css/Header.css";
-import LocalMallIcon from "@mui/icons-material/LocalMall";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
@@ -114,7 +114,7 @@ function Header() {
               </Nav.Link>
             </Link>
             <Link to="/checkout">
-              <LocalMallIcon className="header_localMallIcon" />
+              <ShoppingCartIcon className="header_localMallIcon" />
               <span className="header__optionLineTwo header__basketCount">
                 {basket?.length}
               </span>

@@ -37,9 +37,12 @@
   align-items: center;
   color: white;
 }
-
+.header_localMallIcon {
+  margin-left: 5px;
+  margin-top: 9.5px;
+}
 .header__basketCount {
-  margin-left: 10px;
+  margin-left: 1px;
   margin-right: 10px;
   color: white;
 }
