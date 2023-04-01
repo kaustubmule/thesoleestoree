@@ -8,11 +8,21 @@
   background-color: white;
   color: black;
 }
+
+.empty {
+  color: white;
+  background-color: #161616;
+}
 .checkout__right {
   padding-top: 5px;
-  background-color: #f6b656;
   color: black;
 }
+
+.checkout__right > h2 {
+  padding-top: 25px;
+  color: white;
+}
+
 .checkout__title {
   padding: 10px;
   border-bottom: 1px solid lightgrey;

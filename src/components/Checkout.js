@@ -13,7 +13,7 @@ function Checkout() {
             <div className="checkout__left">
 
                 {basket?.length === 0 ? (
-                    <div>
+                    <div className="empty">
                         <h2>Basket is Empty</h2>
                         <p>Add Some Items to the Basket</p>
                     </div>
