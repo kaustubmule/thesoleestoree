@@ -113,12 +113,12 @@ function Header() {
                   className="header_favIcon"></FavoriteIcon>
               </Nav.Link>
             </Link>
-            <Nav.Link href="/checkout">
+            <Link to="/checkout">
               <LocalMallIcon className="header_localMallIcon" />
               <span className="header__optionLineTwo header__basketCount">
                 {basket?.length}
               </span>
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
