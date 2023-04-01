@@ -32,7 +32,7 @@ function Subtotal() {
 
             <strong>Final Amount : ₹{finalAmount(basket) + 212.5}</strong>
 
-            <Link to='/processing'><button className='btn_buy'>Buy Now</button></Link>
+            <Link to='/contactus'><button className='btn_buy'>Buy Now</button></Link>
 
         </div>
     )

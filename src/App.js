@@ -12,11 +12,12 @@ import Skechers from "./components/Brands/Skechers.js";
 import Puma from "./components/Brands/Puma.js";
 import Reebok from "./components/Brands/Reebok.js";
 import NewBalance from "./components/Brands/NewBalance.js";
-import Processing from "./components/Processing.js";
+import { ContactUs } from "./components/ContactUs.js";
 import Filter from "./components/Filter.js";
 import { useStateValue } from "./components/StateProvider.js";
 import React, { useState, useEffect } from "react";
 import Loader from "./components/Loader/Loader.js";
+import Feed from "./components/feed.js";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -44,7 +45,8 @@ function App() {
             <Route exact path="/skechers" element={<><Header /><Filter /><Skechers /></>} />
             <Route exact path="/newbalance" element={<><Header /><Filter /><NewBalance /></>} />
             <Route exact path="/filter" element={<><Header /><Filter /><Nike /></>} />
-            <Route exact path="/processing" element={<Processing />} />
+            <Route exact path="/contactus" element={<ContactUs />} />
+            <Route exact path="/feed" element={<Feed />} />
 
           </Routes>
       }
