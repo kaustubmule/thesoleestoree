@@ -35,6 +35,10 @@ function Home() {
     }
   }
 
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noreferrer');
+  };
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true)
@@ -199,14 +203,28 @@ function Home() {
 
           </div>
 
+          <div className="showMore_shoes">
+            <Link to="/filter">
 
-          <Link to="/filter">
-            <div className="showMore_shoes">
               <button className="showMore">
                 Show More
               </button>
-            </div>
-          </Link>
+
+            </Link>
+            <button
+              role="link"
+              onClick={() => openInNewTab('https://form.jotform.com/230956050055451')} className="feedback" style={{
+                background: "none",
+                color: "inherit",
+                border: "1px",
+                padding: 0,
+                font: "inherit",
+                cursor: "pointer",
+                outline: "inherit",
+              }}>
+              Any Issues?
+            </button>
+          </div>
         </div>
 
 

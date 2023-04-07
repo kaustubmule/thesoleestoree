@@ -34,9 +34,10 @@ export const ContactUs = () => {
                     What was positive?
                     What can we improve?
                 </label>
-                <textarea name="message" />
+                <textarea style={{ marginTop: "30px", marginBottom: "20px" }} name="message" />
+                <input style={{ marginTop: "50px", marginBottom: "20px" }} type="submit" value="POST" />
                 <Link to="/feed">
-                    <input type="submit" value="Send" />
+                    <button style={{ textDecoration: "none", backgroundColor: "inherit", color: "white", width: "100%", height: "100px", borderBlockWidth: "5px" }}>Next</button>
                 </Link>
 
             </form>
