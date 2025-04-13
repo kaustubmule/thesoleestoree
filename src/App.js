@@ -18,6 +18,7 @@ import { useStateValue } from "./components/StateProvider.js";
 import React, { useState, useEffect } from "react";
 import Loader from "./components/Loader/Loader.js";
 import Feed from "./components/feed.js";
+import ProductDetail from "./components/ProductDetail.js";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -47,12 +48,10 @@ function App() {
             <Route exact path="/filter" element={<><Header /><Filter /><Nike /></>} />
             <Route exact path="/contactus" element={<ContactUs />} />
             <Route exact path="/feed" element={<Feed />} />
-
+            <Route exact path="/product/:id" element={<><Header /><ProductDetail /></>} />
           </Routes>
       }
-
     </Router>
-
   );
 }
 

@@ -1,41 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './css/Subtotal.css';
 import { useStateValue } from './StateProvider';
 import CurrencyFormat from 'react-currency-format';
 import { finalAmount, getBasketTotal } from "./reducer";
-import { Link } from 'react-router-dom';
-
 
 function Subtotal() {
-    const [{ basket }] = useStateValue();
+  const [{ basket }] = useStateValue();
+  const [animate, setAnimate] = useState(false);
 
-    return (
-        <div className="subtotal">
-            <CurrencyFormat
-                renderText={(value) => (
-                    <>
-                        <h4>
-                            Number of items : {basket.length}
-                        </h4>
-                        <small><small>Total Amount : {`${value}`}
-                            <br />CGST SGST: ₹212.5</small></small>
+  useEffect(() => {
+    setAnimate(true);
+    const timer = setTimeout(() => setAnimate(false), 500);
+    return () => clearTimeout(timer);
+  }, [basket]);
 
-                        { }
-                    </>
-                )}
-                decimalScale={2}
-                value={getBasketTotal(basket)}
-                displayType={"text"}
-                thousandsSeparater={true}
-                prefix={"₹"}
-            />
-
-            <strong>Final Amount : ₹{finalAmount(basket) + 212.5}</strong>
-
-            <Link to='/contactus'><button className='btn_buy'>Buy Now</button></Link>
-
-        </div>
-    )
+  return (
+    <div className="subtotal">
+      <h4>Order Summary</h4>
+      <CurrencyFormat
+        renderText={(value) => (
+          <small>
+            <span>Items ({basket.length})</span>
+            <span>Subtotal: {value}</span>
+            <span>CGST & SGST: ₹212.5</span>
+          </small>
+        )}
+        decimalScale={2}
+        value={getBasketTotal(basket)}
+        displayType={"text"}
+        thousandSeparator={true}
+        prefix={"₹"}
+      />
+      <strong className={animate ? 'animate' : ''}>
+        ₹{finalAmount(basket) + 212.5}
+      </strong>
+    </div>
+  );
 }
 
 export default Subtotal;

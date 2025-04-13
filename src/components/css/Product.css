@@ -19,7 +19,7 @@
   height: 300px;
   width: 445px;
   padding: 8vh;
-  object-fit:cover;
+  object-fit: cover;
   object-position: center;
   mix-blend-mode: darken;
   background-blend-mode: difference;

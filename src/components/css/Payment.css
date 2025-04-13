@@ -1,0 +1,261 @@
+/* Payment.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.payment-box {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.checkout-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #4caf50;
+}
+
+.checkout-logo .title {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 15px;
+}
+
+.payment-methods label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-align: center;
+  min-width: 150px;
+}
+
+.payment-methods label svg {
+  width: 32px;
+  height: 32px;
+  color: #4caf50;
+}
+
+.payment-methods input[type="radio"] {
+  display: none;
+}
+
+.payment-methods label:hover {
+  background: #f1f1f1;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods input[type="radio"]:checked + label {
+  background: #e8f5e9;
+  border-color: #4caf50;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.payment-form input,
+.payment-form textarea {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.payment-form input:focus,
+.payment-form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.payment-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-form .row input {
+  flex: 1;
+}
+
+.payment-form button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.payment-form button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payment-methods {
+    flex-direction: column;
+  }
+
+  .payment-methods label {
+    width: 100%;
+  }
+
+  .payment-form .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .payment-box {
+    padding: 20px;
+  }
+}
+
+.card-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.payment-form input.error {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.payment-form input.error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+/* Processing Screen */
+.processing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.processing-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  color: #4caf50;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.processing-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.processing-content p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Success Screen */
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.success-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.success-content h2 {
+  color: #4caf50;
+  font-size: 28px;
+  margin: 0;
+}
+
+.success-content p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
